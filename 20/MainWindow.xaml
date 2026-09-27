@@ -1,0 +1,35 @@
+﻿<Window x:Class="_20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_20"
+        mc:Ignorable="d"
+        Title="Интернет Магазин" Height="550" Width="800">
+
+    <StackPanel >
+
+        <TextBlock Text="Инетренет магазин" Margin="5"/>
+        <TextBox Text="Выберите категорию" Margin="10"/>
+        <ComboBox  x:Name="comboCategory" Margin="7" SelectionChanged="comboCategory_SelectionChanged"/>
+
+        <TextBlock Text="Список товаров" Margin="10" />
+        <ListBox x:Name="listProduct" Height="80" Margin="5" SelectionChanged="listProduct_SelectionChanged"/>
+
+        <TextBox Text="Название товара:" Margin="5" />
+        <TextBox x:Name="txtName" Margin="5"/>
+
+        <TextBox Text="Количество:" Margin="5"/>
+        <TextBox x:Name="txtQuantity" Margin="5"/>
+
+
+        <Button x:Name="btnBuy" Content="Добавить в корзину" Margin="5" Click="btnBuy_Click"/>
+        <TextBlock Text="Корзина" Margin="5"/>
+        <ListBox x:Name="listCart"/>
+
+        <Button x:Name="btnCheck" Content="Офрмить заказ" Click="btnCheck_Click"/>
+        <TextBlock x:Name="txtInfo" Margin="5"/>
+        <TextBlock x:Name="txtinfo" Margin="5"/>
+
+    </StackPanel>
+</Window>
